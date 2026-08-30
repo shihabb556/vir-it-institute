@@ -1,0 +1,428 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>VIR IT INSTITUTE | IT Solutions Company</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#0d141d",
+                        "outline": "#849495",
+                        "surface-container-lowest": "#080f17",
+                        "on-secondary-fixed-variant": "#005227",
+                        "primary-fixed-dim": "#00dbe7",
+                        "surface-tint": "#00dbe7",
+                        "inverse-primary": "#00696f",
+                        "secondary-fixed-dim": "#00e478",
+                        "on-primary-fixed": "#002022",
+                        "tertiary-container": "#dadae0",
+                        "background": "#0d141d",
+                        "primary-fixed": "#74f5ff",
+                        "outline-variant": "#3a494b",
+                        "on-background": "#dce3f0",
+                        "on-tertiary-fixed-variant": "#45474b",
+                        "primary-container": "#00f2ff",
+                        "on-secondary": "#003919",
+                        "surface": "#0d141d",
+                        "on-surface": "#dce3f0",
+                        "on-tertiary": "#2f3035",
+                        "tertiary": "#f7f6fc",
+                        "secondary-fixed": "#60ff98",
+                        "on-tertiary-fixed": "#1a1c20",
+                        "surface-bright": "#333a44",
+                        "primary": "#e1fdff",
+                        "error": "#ffb4ab",
+                        "inverse-on-surface": "#2a313b",
+                        "tertiary-fixed-dim": "#c6c6cc",
+                        "on-secondary-container": "#007239",
+                        "surface-variant": "#2e353f",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#004f54",
+                        "on-secondary-fixed": "#00210c",
+                        "secondary": "#f5fff3",
+                        "on-primary": "#00363a",
+                        "inverse-surface": "#dce3f0",
+                        "surface-container-high": "#232a34",
+                        "surface-container": "#192029",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#e2e2e8",
+                        "on-tertiary-container": "#5e5f64",
+                        "surface-container-highest": "#2e353f",
+                        "on-error": "#690005",
+                        "secondary-container": "#34ff8c",
+                        "on-primary-container": "#006a71",
+                        "surface-container-low": "#151c25",
+                        "on-surface-variant": "#b9cacb"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "unit": "8px",
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "section-padding": "80px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Sora"],
+                        "display-lg": ["Sora"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Sora"],
+                        "display-lg-mobile": ["Sora"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0a0c10;
+            color: theme('colors.on-background');
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-panel-hover:hover {
+            box-shadow: 0 0 30px rgba(0, 219, 231, 0.15);
+            border-image: linear-gradient(to right, theme('colors.primary-fixed-dim'), theme('colors.secondary-fixed-dim')) 1;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, theme('colors.primary-fixed-dim'), theme('colors.secondary-fixed-dim'));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, theme('colors.primary-fixed-dim'), theme('colors.secondary-fixed-dim'));
+            color: #0a0c10;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(0, 228, 120, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: theme('colors.on-surface');
+            transition: all 0.3s ease;
+        }
+
+        .btn-ghost:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 15px rgba(0, 219, 231, 0.2);
+        }
+
+        /* Nav specific styles from JSON */
+        .nav-shell {
+            background: rgba(13, 20, 29, 0.8);
+            backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(0, 219, 231, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative overflow-x-hidden bg-surface-dim">
+<!-- Top Navigation from Shared Components JSON -->
+<nav class="fixed top-0 w-full z-50 nav-shell">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="flex items-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7li_h5n7FWp6jTSSFKWmjdV0DcbD025TML-tngjffagkDDuVNRFoiV64xUpCp2rDbH_-115MQM_0Clc4e7R3oARvY6Yt1PCSt5AiLTfNn60cIyGLSwHpZV5CC1Bka1Y71rajn9AYMnthjM9U3x1qp84zXo-sLfCkODHd_fUtUXxhrTCBOZP31R4J-80W0_bBgGDBX6AV_Hi-Bjn3mDXZ4EZDdErZX0I8dVF4HWQyFDPP5xC70hG55mKs-QqZnZ5JDp18" alt="VIR IT INSTITUTE Official Logo" class="h-12 w-auto object-contain"></div>
+<!-- Links (Desktop) -->
+<div class="hidden md:flex space-x-8">
+<a class="text-primary-fixed-dim font-bold border-b-2 border-primary-fixed-dim pb-1 hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-300" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-300" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<!-- CTA -->
+<div class="hidden md:block">
+<a class="btn-primary px-6 py-2 rounded-full font-label-md text-label-md text-on-primary" href="#contact">Get a Quote</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32">
+<!-- HERO SECTION -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center relative z-10">
+<!-- Decorative Glow Background -->
+<div class="absolute top-1/4 left-0 w-96 h-96 bg-primary-fixed-dim rounded-full mix-blend-screen filter blur-[120px] opacity-20 pointer-events-none"></div>
+<div class="space-y-stack-lg">
+<h1 class="font-display-lg-mobile md:font-display-lg text-on-surface">
+                    We Build <span class="text-gradient">Digital Solutions</span> That Grow Your Business
+                </h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">
+                    VIR IT INSTITUTE provides reliable technology solutions for businesses, startups and organizations — from websites and software to mobile applications and digital services.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="btn-primary px-8 py-3 rounded-full font-label-md text-label-md text-center text-on-primary" href="#contact">Get a Free Quote</a>
+<a class="btn-ghost px-8 py-3 rounded-full font-label-md text-label-md text-center bg-white/5" href="#services">Explore Our Services</a>
+</div>
+</div>
+<div class="relative w-full aspect-square md:aspect-video lg:aspect-square rounded-2xl overflow-hidden glass-panel">
+<img alt="Abstract representation of glowing digital technology and circuits" class="w-full h-full object-cover mix-blend-luminosity opacity-80 hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxrUwFHHJIr5jbucJlaUTHvtpIPV5kC8rpMNas91kg3kS4HR_2mTtPf9lCETM0GMv7yCZ88N_1akWikIpJsifaWDasTPXFvQuARQ5pT5JrvUS3ie4piY4E6KWOaIzjT7LWRc7c-897WmgAZ77SCRzJ5vl_5qE9cEMESi0V6hjqkIZWoWXqgLLZwXQbqlLAJoH62Mko0_ybj_UKkRpL8UtDb_lbVuXZu7SUCkPhfTH1nCw9uIi9P6k_LQ">
+</div>
+</section>
+<!-- STATS SECTION -->
+<section class="border-y border-white/10 relative z-10 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center space-y-2">
+<div class="font-headline-lg text-primary-fixed-dim">50+</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Projects</div>
+</div>
+<div class="text-center space-y-2 border-l border-white/10">
+<div class="font-headline-lg text-secondary-fixed-dim">30+</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Clients</div>
+</div>
+<div class="text-center space-y-2 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0">
+<div class="font-headline-lg text-primary-fixed-dim">10+</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Services</div>
+</div>
+<div class="text-center space-y-2 border-t border-l md:border-t-0 border-white/10 pt-8 md:pt-0">
+<div class="font-headline-lg text-secondary-fixed-dim">24/7</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Support</div>
+</div>
+</div>
+</section>
+<!-- INTRODUCTION -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding text-center relative z-10" id="about">
+<div class="max-w-3xl mx-auto space-y-stack-md">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary-fixed-dim/10 border border-primary-fixed-dim/20 text-primary-fixed-dim font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    About Us
+                </div>
+<h2 class="font-headline-lg text-on-surface">Your Technology Partner for the Digital World</h2>
+<p class="font-body-md text-on-surface-variant">
+                    We specialize in architecting, modernizing, and scaling sophisticated digital products. Our approach combines rigorous engineering standards with cutting-edge design paradigms to deliver software that not only functions flawlessly but captivates users.
+                </p>
+</div>
+</section>
+<!-- SERVICES GRID (Bento-style approach) -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding relative z-10" id="services">
+<h2 class="font-headline-lg text-on-surface mb-12">Our Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="glass-panel glass-panel-hover p-6 rounded-xl space-y-4 group border-primary-fixed-dim/20">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-primary-fixed-dim/10 group-hover:border-primary-fixed-dim/50 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim" style="font-variation-settings: 'FILL' 0;">language</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Web Development</h3>
+<p class="font-body-md text-on-surface-variant text-sm">High-performance, scalable web applications built with modern frameworks.</p>
+<a class="inline-flex items-center text-primary-fixed-dim font-label-md hover:text-secondary-fixed-dim transition-colors" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span></a>
+</div>
+<!-- Service 2 -->
+<div class="glass-panel glass-panel-hover p-6 rounded-xl space-y-4 group border-secondary-fixed-dim/20">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-secondary-fixed-dim/10 group-hover:border-secondary-fixed-dim/50 transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 0;">smartphone</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Mobile App Dev</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Native and cross-platform mobile experiences for iOS and Android.</p>
+<a class="inline-flex items-center text-secondary-fixed-dim font-label-md hover:text-primary-fixed-dim transition-colors" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span></a>
+</div>
+<!-- Service 3 -->
+<div class="glass-panel glass-panel-hover p-6 rounded-xl space-y-4 group md:col-span-2 lg:col-span-2 bg-gradient-to-br from-surface-container-high/50 to-surface-container-low/50 border-primary-fixed-dim/20">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-primary-fixed-dim/10 group-hover:border-primary-fixed-dim/50 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim" style="font-variation-settings: 'FILL' 0;">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Custom Software</h3>
+<p class="font-body-md text-on-surface-variant">Bespoke software architecture tailored specifically to your complex business logic and operational needs, ensuring seamless integration.</p>
+<a class="inline-flex items-center text-primary-fixed-dim font-label-md hover:text-secondary-fixed-dim transition-colors mt-4" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span></a>
+</div>
+<!-- Service 4 -->
+<div class="glass-panel glass-panel-hover p-6 rounded-xl space-y-4 group border-secondary-fixed-dim/20">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-secondary-fixed-dim/10 group-hover:border-secondary-fixed-dim/50 transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 0;">design_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">UI/UX Design</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Intuitive interfaces prioritizing user flow and aesthetic brilliance.</p>
+<a class="inline-flex items-center text-secondary-fixed-dim font-label-md hover:text-primary-fixed-dim transition-colors" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span></a>
+</div>
+<!-- Service 5 -->
+<div class="glass-panel glass-panel-hover p-6 rounded-xl space-y-4 group border-primary-fixed-dim/20">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-primary-fixed-dim/10 group-hover:border-primary-fixed-dim/50 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">E-commerce</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Secure, scalable online retail platforms driving conversions.</p>
+<a class="inline-flex items-center text-primary-fixed-dim font-label-md hover:text-secondary-fixed-dim transition-colors" href="#">Learn More <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- PROCESS SECTION -->
+<section class="border-y border-white/10 relative z-10 py-section-padding bg-surface-container-low bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-on-surface">Our Process</h2>
+<p class="font-body-md text-on-surface-variant mt-4">A streamlined approach to turning ideas into reality.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+<!-- Connecting line for desktop -->
+<div class="hidden md:block absolute top-6 left-10 right-10 h-[1px] bg-white/10 z-0 border-primary-fixed-dim/20"></div>
+<!-- Steps -->
+<div class="relative z-10 flex flex-col items-center text-center space-y-4 border-secondary-fixed-dim/20">
+<div class="w-12 h-12 rounded-full bg-surface-dim border border-primary-fixed-dim flex items-center justify-center font-label-md text-primary-fixed-dim shadow-[0_0_15px_rgba(0,219,231,0.3)] border-primary-fixed-dim/20">01</div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-lg">Discover</h4>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim border flex items-center justify-center font-label-md text-on-surface-variant border-primary-fixed-dim/20">02</div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-lg">Plan</h4>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim border flex items-center justify-center font-label-md text-on-surface-variant border-secondary-fixed-dim/20">03</div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-lg">Build</h4>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim border flex items-center justify-center font-label-md text-on-surface-variant">04</div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-lg">Launch</h4>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim border border-secondary-fixed-dim flex items-center justify-center font-label-md text-secondary-fixed-dim shadow-[0_0_15px_rgba(0,228,120,0.3)]">05</div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-lg">Support</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO / FEATURED WORK -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding relative z-10">
+<h2 class="font-headline-lg text-on-surface mb-12">Featured Work</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="group rounded-2xl overflow-hidden glass-panel relative">
+<div class="aspect-video relative overflow-hidden">
+<img alt="A premium dashboard interface showing analytical data" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2i7qagrqB5WgmdvTDYPIxx2_5WbAKRlyxsw0WHJ-BLvnX9iBmaS3kz5ccuvOGSRt_MVg_AfeYBo0rfwKVyEjkFh4p9W0GcPJW_sSEwHIY8AUnQ-Lb_7cq_isfaVdIye8Lr3cTz1ES_pmYEfRRCfjzpeKLzdby4mOtKDPCQa_F142wVIgAOJZ8f0DN25LJO8aVx15XmAHOTipYgb69DB53BHFUlTnfDQdZxzLrDcLsCbixwp3hl08bnQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-6 relative z-10 backdrop-blur-sm bg-surface-container">
+<div class="font-label-sm text-primary-fixed-dim uppercase tracking-wider mb-2">Analytics Platform</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Enterprise Data Dashboard</h3>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group rounded-2xl overflow-hidden glass-panel relative">
+<div class="aspect-video relative overflow-hidden">
+<img alt="A dark-mode mobile fintech application interface" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO5yf8wsos4jOxROEoQ4SkthNpVWrdvU2TjLtZL_hZ07sLgvzPfClmsQ_yleH-z17hLwuaj1z5RMhgtzkQ9JyZJcEL0uhQ5JPAxYo-zl2Oei2DIU0Ok8XKw0mKCiGfFfZ-fOxzkqTiKlMXtp6rtAwkmSxZMRLWD8J1EkawYAeR8lCkyuYsDHUyP5e4BIgMiBYXSOTpzAjdMXNMfZp_RPyAq5fMUyuWz4UVxEiFIxbzdvvKDnzy8g-GOQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-6 relative z-10 backdrop-blur-sm bg-surface-container">
+<div class="font-label-sm text-secondary-fixed-dim uppercase tracking-wider mb-2">Mobile Fintech</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Aurum Mobile Banking</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA & CONTACT FORM -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding relative z-10" id="contact">
+<div class="glass-panel rounded-2xl p-8 md:p-12 border-primary-fixed-dim/20 shadow-[0_0_50px_rgba(0,219,231,0.05)] grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="space-y-6">
+<h2 class="font-display-lg-mobile text-on-surface leading-tight">Have an Idea? <br><span class="text-gradient">Let's Build It Together.</span></h2>
+<p class="font-body-md text-on-surface-variant">
+                        Reach out to our team of experts to discuss your technical requirements, architectural planning, or digital transformation goals.
+                    </p>
+<div class="pt-8 space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed-dim">mail</span>
+<span class="font-label-md text-on-surface">hello@virit.institute</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">location_on</span>
+<span class="font-label-md text-on-surface">Tech District, Innovation Hub</span>
+</div>
+</div>
+</div>
+<!-- Form -->
+<form class="space-y-4 p-6 rounded-xl border bg-surface-container border-primary-fixed-dim/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Name</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary-fixed-dim focus:ring-1 focus:ring-primary-fixed-dim transition-colors" placeholder="John Doe" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Email</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary-fixed-dim focus:ring-1 focus:ring-primary-fixed-dim transition-colors" placeholder="john@company.com" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Service Required</label>
+<select class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary-fixed-dim focus:ring-1 focus:ring-primary-fixed-dim transition-colors">
+<option>Web Development</option>
+<option>Custom Software</option>
+<option>Mobile App</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary-fixed-dim focus:ring-1 focus:ring-primary-fixed-dim transition-colors" placeholder="Tell us about your project..." rows="4"></textarea>
+</div>
+<button class="btn-primary w-full py-3 rounded-lg font-label-md mt-4 text-on-primary" type="button">Submit Inquiry</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer from Shared Components JSON -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-white/10 w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg py-section-padding px-gutter max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="space-y-4">
+<div class="mb-4"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEUSyEvcAgtRMQrhL_BaboXKoVZWorEeKS1HlsJZ2QxmdFXaDmYxR4nR4kKDwEuEK-nhiPj-4KTw7_qLsYDUhAvW7-nRbey9kwnDmZYNmsJOYuZztR6KFFPoDbHxwc0rMaa4V07061OrpslNUeHIUOBHbc0ZF2B9ZPe7UQTZIz0AYRRSdxCgefmXkPNrHPyKZ2DeIhj9BKTy6gVI7wFrgMtlK1WxLou_c8yt1R-Ri3kEwanROl2xoCN6-afHb4pemcJT0" alt="VIR IT INSTITUTE Official Logo" class="h-16 w-auto object-contain"></div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-4">
+                    Architecting the future through advanced software solutions and digital excellence.
+                </p>
+</div>
+<!-- Links -->
+<div class="md:col-span-3 flex flex-wrap gap-8 justify-start md:justify-end">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-all" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-all" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-all" href="#">Careers</a>
+</div>
+<!-- Copyright -->
+<div class="md:col-span-4 mt-8 pt-8 border-t border-white/5 text-center md:text-left">
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">© 2024 VIR IT INSTITUTE. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+
+</body></html>
